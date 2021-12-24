@@ -15,15 +15,15 @@ In this project, the idea for small talks was inspired by the retrieval-based ch
 
 In the system, there are 5 functionalities, including small daily conversations, identity memorising, information retrieval, intent matching, and game playing. And they are achieved by 5 main python functions in the code.
 
-1. Small conversations
+1. Small conversations<br>
     The daily conversation is mainly carried out by functions *greeting()* and *genReply()*. The *greeting()* function is mainly used to quickly answer some greetings and can be used in combination with the identity management function. Other general daily questions can be replied to by *genReply()*. The system will compare the user input with sentences in the corpus to give out the best-matched answers. If it cannot find a suitable answer, then the system will return a random sentence to show it is unable to respond.
-2. Identity management
+2. Identity management<br>
     The function *memName()* enables the system to remember the name of the person who is currently using the system. At first, the variable storing the name is empty, and if the user mentions their name, such as saying “I am ...” or “My name is ...” or “Call me ...” then the system recognises it (including first name and last name) and remembers it until the end of the program.
-3. Information retrieval
+3. Information retrieval<br>
     For information retrieval, *infoRetrieval()* function allows the system answer to some information queries from users. It supports three types of information, including users’ names, current times, and dates. If the user does not tell the system about their name, the system will remind the user to tell the name first, or the system will display the name of the user. Also, if the system already knows the user’s name, it will greet or say goodbye to them with their name. And for time and date, the user can simply ask “what is the time/date?” or “Could you tell me the time/date?” to get the answer.
 
-4. Intent matching
+4. Intent matching<br>
     The functionality of this section has already been mentioned in some of the previous parts, i.e., information retrieval *infoRetrieval()* and identity management *memName()*, where the user can make the system remember their name through natural language and have the system show it to them again in subsequent conversations. Also, when used to get the time or date, the system can give a clear answer.
 
-5. Game playing
+5. Game playing<br>
     In this system, a hangman game is introduced where the user can start the game by typing “hangman”. The game is a classic word-guessing game where the user has five chances to try. When they get five wrong answers, the round fails. When the game is over, the user can choose to continue the game or exit the game to return to the conversation.
